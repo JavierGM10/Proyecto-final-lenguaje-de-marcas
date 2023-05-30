@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ta-Te-Ti</title>
+  <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <button onclick="redireccionar('index.html')">index</button>
+            <button onclick="redireccionar('ajustes.html')">ajustes</button>
+            <button onclick="redireccionar('Ta-Te-Ti-proyecto-final.html')">Ta-Te-Ti</button>
+            <button onclick="abrirModal()">Abrir Modal</button>
+        </nav>
+      </header>
+    <h1>Ta-Te-Ti (Reciclado)</h1>
+    <div class="container">
+        <div class="board">
+          <div class="cell" id="cell-0" onmouseenter="highlightCell(0)" onmouseleave="unhighlightCell(0)" onclick="Dibujar(0)"></div>
+          <div class="cell" id="cell-1" onmouseenter="highlightCell(1)" onmouseleave="unhighlightCell(1)" onclick="Dibujar(1)"></div>
+          <div class="cell" id="cell-2" onmouseenter="highlightCell(2)" onmouseleave="unhighlightCell(2)" onclick="Dibujar(2)"></div>
+          <div class="cell" id="cell-3" onmouseenter="highlightCell(3)" onmouseleave="unhighlightCell(3)" onclick="Dibujar(3)"></div>
+          <div class="cell" id="cell-4" onmouseenter="highlightCell(4)" onmouseleave="unhighlightCell(4)" onclick="Dibujar(4)"></div>
+          <div class="cell" id="cell-5" onmouseenter="highlightCell(5)" onmouseleave="unhighlightCell(5)" onclick="Dibujar(5)"></div>
+          <div class="cell" id="cell-6" onmouseenter="highlightCell(6)" onmouseleave="unhighlightCell(6)" onclick="Dibujar(6)"></div>
+          <div class="cell" id="cell-7" onmouseenter="highlightCell(7)" onmouseleave="unhighlightCell(7)" onclick="Dibujar(7)"></div>
+          <div class="cell" id="cell-8" onmouseenter="highlightCell(8)" onmouseleave="unhighlightCell(8)" onclick="Dibujar(8)"></div>
+        </div>
+
+      </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <h2>Detalles del alumno</h2>
+        <p><strong>Nombre:</strong> Javier García Martín</p>
+        <p><strong>Curso:</strong> 1ºDAM</p>
+        <div><strong>Requisitos:</strong> 
+          <ul>
+              <li>En la página de inicio hay una breve información que he tratado de poner junto al requisito del xml y xsl</li>
+              <li>Los documentos .xml y .xsl están en la carpeta del proyecto pero no se aplican bien en la página del browser</li>
+              <li>En la página de ajustes, solo se mantiene al recargar los datos del usuario que registres</li>
+              <li>Esos datos están insertados mediante los elementos de entrada de datos</li>
+              <li>Los requerimientos de JS se cumplen en la tercera página con el Ta Te Ti</li>
+              <li>No he logrado mostrar el nombre del usuario registrado en la esquina de la pantalla</li>
+              <li>El modal de la página de ajustes no se abre con un pop-up, sino con un texto. Esto es hecho a posta para que se vea si se aplican los cambios al texto correctamente</li>
+          </ul>
+      </div>
+    </div>
+      <script src="TaTeTi.js"></script>
+      <script src="Scripts.js"></script>
+</body>
+</html>

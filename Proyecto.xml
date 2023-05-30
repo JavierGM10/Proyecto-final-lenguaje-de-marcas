@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="Proyecto.xsl"?>
+<proyecto>
+  <titulo>Mi trabajo final de Lenguaje de marcas</titulo>
+  <descripcion>Este es mi proyecto para la entrega del proyecto final del T3.</descripcion>
+  <explicacion>
+    <parrafo>Consta de una página de inicio (esta), una página de ajustes y el Ta-Te-Ti previamente entregado</parrafo>
+    <parrafo>[la originalidad y el tiempo no dan para más, así la tercera página se tarda menos en corregir ^^]</parrafo>
+  </explicacion>
+</proyecto>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <button onclick="redireccionar('index.html')">index</button>
+            <button onclick="redireccionar('ajustes.html')">ajustes</button>
+            <button onclick="redireccionar('Ta-Te-Ti-proyecto-final.html')">Ta-Te-Ti</button>
+            <button onclick="abrirModal()">Abrir Modal</button>
+        </nav>
+      </header>
+    <section id="ajustes">
+
+        <div id="user-info" class="user-info">
+            <input type="text" id="nombre" placeholder="Ingrese su nombre" />
+            <input type="number" id="edad" placeholder="Ingrese su edad" />
+            <input type="text" id="curso" placeholder="Ingrese su curso" />
+            <input type="password" id="contrasena" placeholder="Ingrese su contraseña" />
+            <button onclick="guardarInformacion()">Guardar</button>
+          </div>
+
+          <section id="ajustes">
+
+            <p id="esteParrafo">Elija un Color</p>
+            <input type="color" name="colorElegido" />
+            <button onclick="guardarInformacion()">Guardar</button>
+            <button type="button" onclick="aplicarCambios()">APLICAR</button>
+    
+            <p>Elija la fuente base del documento</p>
+            <select name="tamFuente">
+                <option value="0.8">Pequeña</option>
+                <option value="1.0" selected="selected">Mediana</option>
+                <option value="1.4">Grande</option>
+            </select>
+            <button onclick="guardarInformacion()">Guardar</button>
+            <button type="button" onclick="aplicarCambios()">APLICAR</button>
+                <p id="mensaje"></p>
+        </section>
+    
+          <div id="modal" class="modal">
+            <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <h2>Detalles del alumno</h2>
+            <p><strong>Nombre:</strong> Javier García Martín</p>
+            <p><strong>Curso:</strong> 1ºDAM</p>
+            <div><strong>Requisitos:</strong> 
+                <ul>
+                    <li>En la página de inicio hay una breve información que he tratado de poner junto al requisito del xml y xsl</li>
+                    <li>Los documentos .xml y .xsl están en la carpeta del proyecto pero no se aplican bien en la página del browser</li>
+                    <li>En la página de ajustes, solo se mantiene al recargar los datos del usuario que registres</li>
+                    <li>Esos datos están insertados mediante los elementos de entrada de datos</li>
+                    <li>Los requerimientos de JS se cumplen en la tercera página con el Ta Te Ti</li>
+                    <li>No he logrado mostrar el nombre del usuario registrado en la esquina de la pantalla</li>
+                    <li>El modal de la página de ajustes no se abre con un pop-up, sino con un texto. Esto es hecho a posta para que se vea si se aplican los cambios al texto correctamente</li>
+                </ul>
+            </div>
+        </div>
+    
+    <script src="Scripts.js"></script>
+
+</body>
+
+</html>
